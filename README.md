@@ -35,8 +35,8 @@ Download google-services.json to obtain your Firebase Android config, add it to 
 
 Server Side Tables:
 CREATE TABLE [UsersFcmTokens](
-    [ID] [bigint] IDENTITY(1,1) NOT NULL,
-    [UserID] [bigint] NULL,
-    [DeviceID] [varchar](100) NULL,
-    [Token] [varchar](max) NULL);
+[ID] [bigint] IDENTITY(1,1) NOT NULL,
+[UserID] [bigint] NULL,
+[DeviceID] [varchar](100) NULL,
+[Token] [varchar](max) NULL);
 
