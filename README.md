@@ -40,5 +40,5 @@ CREATE TABLE [UsersFcmTokens](
 [DeviceID] [varchar](100) NULL,
 [Token] [varchar](max) NULL);
 
-<img width="318" alt="ServerDb_Token" src="https://user-images.githubusercontent.com/4394119/116902208-7c73de80-ac58-11eb-95c4-26e8254c06c4.png">
+
 
