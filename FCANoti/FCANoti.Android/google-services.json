@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975711452948",
+    "project_id": "sarvedyam-b3c09",
+    "storage_bucket": "sarvedyam-b3c09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975711452948:android:c6a19874a5781569b50c01",
+        "android_client_info": {
+          "package_name": "com.es.sarvedyam_foods"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975711452948-renrq5jsinrdsfj6dfjjndg06d36rno3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk_hxWaFM4n8BkgYqy9TXDTMr_dkfMDy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975711452948-renrq5jsinrdsfj6dfjjndg06d36rno3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

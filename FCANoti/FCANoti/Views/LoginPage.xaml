@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+    mc:Ignorable="d"
+    x:Class="FCANoti.Views.LoginPage"
+    Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+
+            <StackLayout
+                Padding="20"
+                VerticalOptions="End">
+                
+                <material:MaterialTextField
+                    Margin="16,2,16,2"
+                    MaxLength="10"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    TabIndex="4"
+                    IsTabStop="True"
+                    Placeholder="Mobile Number"
+                    PlaceholderColor="Gray"
+                    ReturnType="Next"
+                    HorizontalOptions="FillAndExpand"
+                    IsSpellCheckEnabled="False"
+                    Text="{Binding Username}">
+                </material:MaterialTextField>
+
+                <material:MaterialTextField
+                    Margin="16,2,16,2"
+                    MaxLength="20"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    TabIndex="4"
+                    IsTabStop="True"
+                    Placeholder="Password"
+                    PlaceholderColor="Gray"
+                    ReturnType="Go"
+                    ReturnCommand="{Binding SignInCommand}"
+                    HorizontalOptions="FillAndExpand"
+                    IsSpellCheckEnabled="False"
+                    Text="{Binding Password}"
+                    InputType="Password">
+                </material:MaterialTextField>
+
+                <Button
+                    BorderWidth="2"
+                    CornerRadius="25"
+                    Margin="0,5,0,0"
+                    Text="Login"
+                    TextColor="White"
+                    FontSize="Medium"
+                    Command="{Binding SignInCommand}"
+                    FontFamily="NormalFont" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

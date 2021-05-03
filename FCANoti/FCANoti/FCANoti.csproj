@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Plugin.FirebasePushNotification" Version="3.3.10" />
+    <PackageReference Include="XF.Material" Version="1.7.8" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.483" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helper\" />
+    <Folder Include="DependacyServices\" />
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\StatusPopupPage.xaml.cs">
+      <DependentUpon>StatusPopupPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="..\FCANoti.Dto\FCANoti.Dto.projitems" Label="Shared" Condition="Exists('..\FCANoti.Dto\FCANoti.Dto.projitems')" />
+</Project>

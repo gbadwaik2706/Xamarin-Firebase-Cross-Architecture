@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{F9486614-6A34-4C71-9301-E87D0C1CDA75}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FCANoti.Dto</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ResponseDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserTokenDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NotificationRequestDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginResponseDto.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LoginRequestDto.cs" />
+  </ItemGroup>
+</Project>
